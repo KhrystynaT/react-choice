@@ -53,7 +53,7 @@ function UserInputForm(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit className="mx-auto"} >
       <div className="form-group">
         <label htmlFor="textInput">Enter options:</label>
         <textarea
