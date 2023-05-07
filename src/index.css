@@ -1,0 +1,59 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+#root {
+  height: 100vh;
+}
+
+/* Update ChoiceGenerator and GeneratedChoice styles */
+.ChoiceGenerator {
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+  background-color: rgba(198, 191, 191, 0.476);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.GeneratedChoice {
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px #6e6767;
+  color: #2b1342e4;
+}
+
+/* Update UserInputForm styles */
+.UserInputForm {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: rgba(64, 60, 60, 0.766);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.UserInputForm label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #645c86;
+}
+
+.UserInputForm textarea {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5b5280;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.UserInputForm button:active {
+  background-color: #000;
+  border-color: #000;
+  transform: scale(0.95);
+}
