@@ -1,3 +1,5 @@
+#Deployed on Netlify : https://random-choice-reactapp.netlify.app/
+
 # Random Choice Generator
 
 This app generates a random choice from a list of options provided by the user. It can be used to help with decision-making, picking a restaurant, or any other scenario where you need to randomly select an option.
