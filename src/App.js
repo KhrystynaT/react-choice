@@ -18,7 +18,8 @@ function App() {
       >
         <p style={{ fontSize: "14px", marginBottom: "5px" }}>
           Designed and developed with
-          <FaHeart style={{ fill: "#87ceeb" }} /> by Khrystyna T.
+          <FaHeart className="m-1" style={{ fill: "#87ceeb" }} /> by Khrystyna
+          T.
         </p>
         <p style={{ fontSize: "12px", marginBottom: "5px" }}>
           Connect with me on LinkedIn:{" "}
