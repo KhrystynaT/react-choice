@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-import { FaGlobe } from "react-icons/fa";
+import { FaGlobe, FaHeart } from "react-icons/fa";
 
 function App() {
   return (
@@ -9,6 +9,31 @@ function App() {
       <div className="container">
         <ChoiceGenerator />
       </div>
+      <footer
+        className="text-center  text-light"
+        style={{
+          backgroundColor: " rgba(32, 25, 25, 0.254)",
+          padding: "10px",
+        }}
+      >
+        <p style={{ fontSize: "14px", marginBottom: "5px" }}>
+          Designed and developed with
+          <FaHeart style={{ fill: "#87ceeb" }} /> by Khrystyna T.
+        </p>
+        <p style={{ fontSize: "12px", marginBottom: "5px" }}>
+          Connect with me on LinkedIn:{" "}
+          <a
+            href="https://www.linkedin.com/in/tyvoniuk-khrystyna/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Khrystyna T.
+          </a>
+        </p>
+        <p style={{ fontSize: "10px", color: "#fff" }}>
+          © 2023 Khrystyna T. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 }
@@ -67,29 +92,35 @@ function UserInputForm(props) {
   return (
     <form onSubmit={handleSubmit} className="mx-auto text-center">
       <div className="form-group">
-        <label htmlFor="textInput" className="text-dark mb-3 fs-3">
+        <label
+          htmlFor="textInput"
+          className="  mb-3 fs-3"
+          style={{ color: "rgba(37, 39, 87)" }}
+        >
           Enter options:
         </label>
         <textarea
           id="textInput"
           value={textInput}
           onChange={handleTextInputChange}
-          className="form-control bg-transparent"
+          className="form-control bg-transparent customized-border "
           rows="4"
+          style={{ color: "rgba(37, 39, 87, 0.735)" }}
         />
       </div>
-      <button
-        type="submit"
-        className="mt-3 btn btn-lg btn-outline-primary fs-3"
-      >
+      <button type="submit" className="mt-3 btn btn-lg customized-btn fs-3">
         Generate Choice
       </button>
       {optionList.length > 0 && (
         <div className="mt-3">
-          <p className="text-dark">You have entered the following options:</p>
-          <ul>
+          <p className="text-light  fs-4 ">
+            You have entered the following options:
+          </p>
+          <ul className="text-light fs-5 ">
             {optionList.map((option, index) => (
-              <li key={index}>{option}</li>
+              <li className="list-unstyled" key={index}>
+                {option}
+              </li>
             ))}
           </ul>
         </div>
